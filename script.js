@@ -3,6 +3,11 @@ const api=
     key:"0b01adbe704feb418a5a2e72236fd26e",
     baseurl:"https://api.openweathermap.org"
 };
+window.addEventListener('resize', () => { 
+    document.querySelector(':root').style
+      .setProperty('--vh', window.innerHeight/100 + 'px');
+  })
+
 const searchbox=document.querySelector('.search-box');
 window.addEventListener('load',()=>{
     let long;

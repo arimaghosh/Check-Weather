@@ -10,7 +10,7 @@ body
     background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     cursor: context-menu;
-    height:100vh;
+    height: calc(100 * var(--vh));
 }
 .app-wrap
 {
@@ -24,13 +24,12 @@ header
     align-items:center;
     justify-content: center;
     padding: 30px 15px 15px;
-    height:20vh;
 }
 
 header input
 {
     width:100%;
-    max-width:280px;
+    max-width:320px;
     padding:10px 15px;
     border:none;
     outline:none;
@@ -53,7 +52,6 @@ main
     flex-direction: column;
     text-align:center;
     color:white;
-    height:60vh;
 }
 .location .city
 {
@@ -97,7 +95,10 @@ footer
     align-items:center;
     background-color:rgba(255, 255, 255,0.4);
     color:#642B73;
-    height:20vh;
+    position:relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 
